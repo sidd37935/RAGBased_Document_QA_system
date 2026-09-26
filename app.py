@@ -25,10 +25,14 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+# NOTE: Groq periodically decommissions older models (see
+# https://console.groq.com/docs/deprecations). llama3-70b-8192 and
+# mixtral-8x7b-32768 are both gone. The options below use Groq's current
+# production models as of late 2026.
 MODEL_OPTIONS = {
-   "Llama 3.3 70B (best quality)": "llama3-70b-8192",
-    "Llama 3.1 8B (fastest)": "llama-3.1-8b-instant",
-    "Gemma 2 9B": "gemma2-9b-it",
+    "GPT-OSS 20B (Fast)": "openai/gpt-oss-20b",
+    "GPT-OSS 120B (Best quality)": "openai/gpt-oss-120b",
+    "Llama 3.3 70B": "llama-3.3-70b-versatile",
 }
 
 # --------------------------------------------------------------------------------------
