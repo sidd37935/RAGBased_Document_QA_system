@@ -26,7 +26,7 @@ st.set_page_config(
 )
 
 MODEL_OPTIONS = {
-   "Llama 3.3 70B (best quality)": "llama-3.3-70b-specdec",
+   "Llama 3.3 70B (best quality)": "llama3-70b-8192",
     "Llama 3.1 8B (fastest)": "llama-3.1-8b-instant",
     "Gemma 2 9B": "gemma2-9b-it",
 }
